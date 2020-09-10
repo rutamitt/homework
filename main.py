@@ -28,7 +28,7 @@ get_trends_data(sorted(["vpn", "hack", "cyber", "stream", "torrent"]))
 
 
 def upload_to_bigquery(project, dataset, table):
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/ruta/Downloads/Homework Data-5572d3237302.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "" #path to key
 
     client = bigquery.Client(project=project)
 
